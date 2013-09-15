@@ -13,16 +13,21 @@
 	}
 
 	.keywords {
+		@include border-radius;
+		@include group;
+
 		width:880px;
 		clear:both;
-		font-size: 0.9em;
+		font-size: 0.8em;
+		background:#1F8A45;
+		padding:10px;
 
 		li {
 			float:left;
 			margin-right:10px;
 			margin-bottom: 5px;
 			white-space: wrap;
-			color:grey;
+			color:white;
 		}
 
 		li:after {
