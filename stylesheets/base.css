@@ -1,0 +1,59 @@
+/* line 1, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+body {
+  font-family: "proxima-nova";
+  font-size: 18px; }
+
+/* line 6, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+strong {
+  white-space: pre-wrap; }
+
+/* line 10, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600; }
+
+/* line 14, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+h1 {
+  font-size: 3em; }
+
+/* line 18, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+h2 {
+  font-size: 2.2em;
+  margin-bottom: 10px; }
+
+/* line 23, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+h4 {
+  font-size: 1.2em;
+  font-weight: 500; }
+
+/* line 28, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+p {
+  margin-top: 0;
+  line-height: 1.6em; }
+
+/* line 33, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 {
+  margin-top: 60px; }
+
+/* line 37, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+em {
+  font-weight: 600; }
+
+/* line 41, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+ul {
+  margin: 0;
+  padding: 0; }
+
+/* line 46, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+li {
+  list-style: none;
+  margin-left: 0;
+  margin: 0; }
+
+/* line 52, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+a {
+  color: #5373F8;
+  text-decoration: none; }
+
+/* line 57, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+a:hover {
+  text-decoration: underline; }
