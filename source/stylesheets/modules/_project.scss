@@ -2,6 +2,29 @@
 	padding:20px 0 60px;
 	border-top: 1px solid #ccc;
 	@include group;
+
+	.screenshots {
+		float:right;
+		margin-bottom:50px;
+		margin-left:20px;
+	}
+
+	.keywords {
+		width:880px;
+		clear:both;
+		font-size: 0.9em;
+
+		li {
+			float:left;
+			margin-right:10px;
+			margin-bottom: 5px;
+			white-space: wrap;
+		}
+
+		li:after {
+			content: ',';
+		}
+	}	
 }
 
 .project:nth-child(even) { 

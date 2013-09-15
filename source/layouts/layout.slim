@@ -13,7 +13,7 @@ html
         javascript: 
             try{Typekit.load();} catch(e){};
 
-        == stylesheet_link_tag "all"
+        == stylesheet_link_tag "all", :media => "all"
         == javascript_include_tag  "all"
 
     body class="#{page_classes}"
