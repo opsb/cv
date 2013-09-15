@@ -7,7 +7,7 @@ title: Oliver Searle-Barnes
 		.constrained
 			h1 Oliver <span class="nobreak">Searle-Barnes</span>
 
-.header-block
+.section
 	.container
 		.constrained
 			h1 Profile
@@ -18,10 +18,10 @@ title: Oliver Searle-Barnes
 		.constrained
 			h1 Projects
 
-.project
+.project.section
 	.container
 		.constrained
-			.year 2012
+			.year.badge 2012
 			img.screenshots src="/images/give4sure/combined.png"
 			h2 Give4Sure
 			
@@ -30,7 +30,7 @@ title: Oliver Searle-Barnes
 
 			
 
-			p Fundraising SAAS product for charities. Using a cross-browser plugin charities could leverage their supporter's online spending to raise money. 
+			p White-labelled fundraising SAAS product for charities. Using a cross-browser plugin charities can leverage their supporter's online spending to raise money. 
 
 			ul.keywords
 				li Affiliate APIs
@@ -62,11 +62,21 @@ title: Oliver Searle-Barnes
 				li VCR (web API testing)
 				li: strong + much more
 
-
-.project
+.project.section
 	.container
 		.constrained
-			.year 2010
+			.year.badge 2011
+			h2 M&amp;S Your School Uniform
+			.project-position CTO
+			a.project-link href="http://www.mandsyourschooluniform.com/" www.mandsyourschooluniform.com
+
+			ul.keywords
+				li Ruby on Rails
+
+.project.section
+	.container
+		.constrained
+			.year.badge 2010
 			h2 Myschooldirect
 			.project-position CTO
 			a.project-link href="http://www.myschooldirect.com" www.myschooldirect.com
@@ -74,11 +84,12 @@ title: Oliver Searle-Barnes
 			ul.keywords
 				li Ruby on Rails
 
-.project
+.project.section
 	.container
 		.constrained
-			.year 2008
+			.year.badge 2008
 			h2 Intelligence Centre 2
+			.company Informa
 			.project-position Tech Lead
 			a.project-link href="http://www.informatandm.com/ic" www.informatandm.com/ic
 
@@ -92,12 +103,29 @@ title: Oliver Searle-Barnes
 				li Spring
 				li JPA(hibernate)
 
-
-.project
+.project.section
 	.container
 		.constrained
-			.year 2006
-			h2 WBIS
+			.year.badge 2007
+			h2 World Cellular Information Service
+			.company Informa
+			.project-position Tech lead
+			a.project-link href="http://www.informatandm.com/about/wcis" www.informatandm.com/about/wcis
+
+			p BI portal for mobile phone data. Created a strategy with business to incrementally migrate existing site to new architecture based on WBIS (see below). Releases made after migrating each section of site. New architecture built on top of olap4j. Similar to jdbc, this allowed a switch from mondrian to ms analysis services part way through the project when management decided to invest in the faster engine. Introduced clover as mechanism for effectively tracking test coverage and to identify areas of code base that were overly complex.
+
+			ul.keywords
+				li Java
+				li Tapestry 5
+				li Spring
+				li JPA(hibernate)
+
+.project.section
+	.container
+		.constrained
+			.year.badge 2006
+			h2 World Broadband Information Service
+			.company Informa
 			.project-position Tech lead
 			a.project-link href="http://www.informatandm.com/wbis" www.informatandm.com\/wbis
 
@@ -112,10 +140,10 @@ title: Oliver Searle-Barnes
 				li Hibernate
 
 
-.project
+.project.section
 	.container
 		.constrained
-			.year 2004
+			.year.badge 2004
 			h2 Nutshell development - various
 			.project-position CTO
 
@@ -126,10 +154,10 @@ title: Oliver Searle-Barnes
 				li JDO
 
 
-.project
+.project.section
 	.container
 		.constrained
-			.year 2004
+			.year.badge 2004
 			h2 Runtime Collective
 			.project-position Contractor
 
@@ -137,13 +165,23 @@ title: Oliver Searle-Barnes
 				li Java
 				li Servlets
 
-.education
+.header-block
 	.container
 		.constrained
 			h1 Education
 
-		.institution
-			.constrained
-				.year 2004
-				h2 University of Sussex
-				.grade 2/1
+.institution
+	.container
+		.constrained
+			.year.badge 2004
+			h2 University of Sussex
+			.course Artificial Intelligence and Computer Science
+			.grade.badge.badge-small.badge-positive 2/1
+
+.institution
+	.container
+		.constrained
+			.year.badge 2001
+			h2 Leeds University
+			.course Cognitive Science
+			.grade.badge.badge-small.badge-positive 2/1			
