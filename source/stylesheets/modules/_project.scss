@@ -33,5 +33,9 @@
 		li:after {
 			content: ',';
 		}
+
+		li.last:after {
+			content: '';
+		}
 	}	
 }
