@@ -3,6 +3,12 @@
 @import 'vendor/_normalize';
 @import 'layout';
 @import 'base';
+
 @import 'mixins/group';
+
 @import 'modules/project';
+@import 'modules/education';
+@import 'modules/year';
+@import 'modules/project_keywords';
 @import 'modules/header-block';
+@import 'modules/nobreak';

@@ -1,14 +1,19 @@
-.constrained {
-	width:700px;
+.container {
+	max-width:980px;
 	margin:0 auto;
+	padding:0 0px;
+}
+
+.constrained {
+	margin-left:100px;
+	max-width:880px;
 }
 
 #header {
-	background:#6FDCEB;
+	background:#489DA8;
 	padding:20px 0;
 	h1 {
 		font-size: 3.6em;
-		text-align: center;
 		color:white;
 	}
 }

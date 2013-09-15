@@ -1,0 +1,11 @@
+.project-keywords {
+	li {
+		float:left;
+		margin-right:10px;
+		margin-bottom: 5px;
+	}
+
+	li:after {
+		content: ',';
+	}
+}
