@@ -363,10 +363,10 @@ table {
   left: 0;
   top: 0;
   right: 0;
-  z-index: 100; }
+  z-index: 600; }
   /* line 18, /Users/opsb/Dropbox/work/cv/source/stylesheets/_layout.scss */
   #header h1 {
-    font-size: 3.6em;
+    font-size: 3.8em;
     color: white;
     padding: 5px 0;
     margin: 0; }
@@ -395,7 +395,7 @@ table {
 
 /* line 47, /Users/opsb/Dropbox/work/cv/source/stylesheets/_layout.scss */
 #main {
-  margin-top: 160px; }
+  margin-top: 158px; }
 
 /* line 1, /Users/opsb/Dropbox/work/cv/source/stylesheets/_base.scss */
 body {
@@ -412,11 +412,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 14, /Users/opsb/Dropbox/work/cv/source/stylesheets/_base.scss */
 h1 {
-  font-size: 3em; }
+  font-size: 2.8em; }
 
 /* line 18, /Users/opsb/Dropbox/work/cv/source/stylesheets/_base.scss */
 h2 {
-  font-size: 2.2em;
+  font-size: 2.0em;
   margin-bottom: 10px; }
 
 /* line 23, /Users/opsb/Dropbox/work/cv/source/stylesheets/_base.scss */
@@ -532,32 +532,6 @@ a:hover {
     float: left;
     margin-top: 7px; }
 
-/* line 1, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_header-block.scss */
-.header-block {
-  zoom: 1;
-  /* For IE 6/7 (trigger hasLayout) */
-  position: sticky;
-  border-top: 1px solid #ccc;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background: #666;
-  color: white; }
-  /* line 3, /Users/opsb/Dropbox/work/cv/source/stylesheets/mixins/_group.scss */
-  .header-block:before, .header-block:after {
-    content: "";
-    display: table; }
-  /* line 7, /Users/opsb/Dropbox/work/cv/source/stylesheets/mixins/_group.scss */
-  .header-block:after {
-    clear: both; }
-  /* line 10, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_header-block.scss */
-  .header-block h1 {
-    padding: 0;
-    margin: 0; }
-
-/* line 16, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_header-block.scss */
-.stuck {
-  background: red; }
-
 /* line 1, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_nobreak.scss */
 .nobreak {
   white-space: nowrap; }
@@ -574,21 +548,18 @@ a:hover {
   .project:after {
     clear: both; }
   /* line 4, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
-  .project h2 {
-    position: sticky; }
-  /* line 8, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
   .project .position {
     margin-bottom: 20px; }
   @media all and (min-width: 1020px) {
-    /* line 13, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
+    /* line 9, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
     .project .screenshots {
       float: right; } }
   @media all and (max-width: 1020px) {
-    /* line 19, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
+    /* line 15, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
     .project .screenshots {
       float: none;
       margin: 0 auto; } }
-  /* line 25, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
+  /* line 21, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
   .project .keywords {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -609,31 +580,56 @@ a:hover {
     /* line 7, /Users/opsb/Dropbox/work/cv/source/stylesheets/mixins/_group.scss */
     .project .keywords:after {
       clear: both; }
-    /* line 35, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
+    /* line 31, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
     .project .keywords li {
       float: left;
       margin-right: 10px;
       margin-bottom: 5px;
       white-space: wrap;
       color: #333; }
-    /* line 43, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
+    /* line 39, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
     .project .keywords li:after {
       content: ','; }
-    /* line 47, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
+    /* line 43, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
     .project .keywords li.last:after {
       content: ''; }
 
 /* line 1, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_section.scss */
 .section {
+  position: relative; }
+
+/* line 5, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_section.scss */
+.section-header {
+  z-index: 500;
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #666;
+  color: white; }
+  /* line 3, /Users/opsb/Dropbox/work/cv/source/stylesheets/mixins/_group.scss */
+  .section-header:before, .section-header:after {
+    content: "";
+    display: table; }
+  /* line 7, /Users/opsb/Dropbox/work/cv/source/stylesheets/mixins/_group.scss */
+  .section-header:after {
+    clear: both; }
+  /* line 13, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_section.scss */
+  .section-header h1 {
+    padding: 0;
+    margin: 0; }
+
+/* line 19, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_section.scss */
+.sub-section {
   padding: 20px 0 60px;
   border-top: 1px solid #ccc; }
 
-/* line 6, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_section.scss */
-.section:nth-child(odd) {
+/* line 24, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_section.scss */
+.sub-section:nth-child(odd) {
   background-color: #fafaf4; }
 
-/* line 10, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_section.scss */
-.section:nth-child(even) {
+/* line 28, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_section.scss */
+.sub-section:nth-child(even) {
   background-color: #fff; }
 
 /* line 1, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_year.scss */
@@ -669,4 +665,22 @@ a:hover {
 .stickit-end {
   bottom: 40px;
   position: absolute;
+  right: 0; }
+
+/* line 29, /Users/opsb/Dropbox/work/cv/source/stylesheets/_state.scss */
+[data-sticky='stuck'] .section-header {
+  position: fixed;
+  top: 79px;
+  left: 0;
+  right: 0; }
+
+/* line 36, /Users/opsb/Dropbox/work/cv/source/stylesheets/_state.scss */
+[data-sticky='released'] .section-header {
+  position: relative; }
+
+/* line 40, /Users/opsb/Dropbox/work/cv/source/stylesheets/_state.scss */
+[data-sticky='receding'] .section-header {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   right: 0; }
