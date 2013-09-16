@@ -540,7 +540,7 @@ $(document).ready(function(){
 	$(window).on('scroll touchmove', function(){
 		var scrollTop = $(window).scrollTop();
 		var position = scrollTop - offset;
-		console.log(position);
+
 		$('#header').css("padding", padding(40, position));
 
 		jQuery.waypoints("refresh");					
@@ -556,19 +556,16 @@ $(document).ready(function(){
 
 	function stick(el) {
 		el.attr("data-sticky", "stuck");
-		console.log("sticking: " + name(el));
 		el.placeholder.show();
 	}
 
 	function release(el) {
 		el.attr("data-sticky", "released");
-		console.log("releasing: " + name(el));
 		el.placeholder.hide();
 	}
 
 	function recede(el) {
 		el.attr("data-sticky", "receding");
-		console.log("receding: " +  name(el));
 	}
 
 	$('.section').each(function(index, element){
@@ -579,8 +576,6 @@ $(document).ready(function(){
 			direction == "down" ? stick(container) : release(container);
 		}, { offset: offset } );
 
-		console.log("bottom: " + -container.outerHeight() + header.outerHeight());
-
 		container.waypoint(function(direction){
 			direction == "down" ? recede(container) : stick(container);
 		}, { 
@@ -588,8 +583,6 @@ $(document).ready(function(){
 				return -container.outerHeight() + header.outerHeight() + (offset*1);	
 			}
 		} );	
-
-		console.log(header.outerHeight());
 
 		container.placeholder = $("<div></div>").insertBefore(header)
 												.css("display", "none")
