@@ -11,9 +11,10 @@ $(document).ready(function(){
 		var scrollTop = $(window).scrollTop();
 		var padding = 40-(scrollTop/2.0);
 		padding = padding < 0 ? 0 : padding;
+		padding = padding > 40 ? 40 : padding;
 
 		$('#header').css("padding-top", padding)
-								   .css("padding-bottom", padding);
+					.css("padding-bottom", padding);
 	})
 })
 ;

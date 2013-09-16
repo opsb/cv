@@ -347,84 +347,113 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 1, /Users/opsb/Dropbox/work/cv/source/stylesheets/layout.scss */
+/* line 1, /Users/opsb/Dropbox/work/cv/source/stylesheets/_layout.scss */
 .constrained {
   max-width: 900px;
   margin: 0 auto;
   padding-left: 100px;
-  padding-right: 20px; }
+  padding-right: 20px;
+  position: relative; }
 
-/* line 8, /Users/opsb/Dropbox/work/cv/source/stylesheets/layout.scss */
+/* line 9, /Users/opsb/Dropbox/work/cv/source/stylesheets/_layout.scss */
 #header {
   background: #489DA8;
   padding: 40px 0;
+  position: fixed;
   left: 0;
   top: 0;
-  right: 0; }
-  /* line 16, /Users/opsb/Dropbox/work/cv/source/stylesheets/layout.scss */
+  right: 0;
+  z-index: 100; }
+  /* line 18, /Users/opsb/Dropbox/work/cv/source/stylesheets/_layout.scss */
   #header h1 {
     font-size: 3.6em;
     color: white;
     padding: 5px 0;
     margin: 0; }
+  /* line 25, /Users/opsb/Dropbox/work/cv/source/stylesheets/_layout.scss */
+  #header .external-links {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -20px;
+    background: white;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    padding: 5px 10px; }
+    /* line 34, /Users/opsb/Dropbox/work/cv/source/stylesheets/_layout.scss */
+    #header .external-links li {
+      float: left; }
+      /* line 36, /Users/opsb/Dropbox/work/cv/source/stylesheets/_layout.scss */
+      #header .external-links li img {
+        height: 26px; }
+    /* line 41, /Users/opsb/Dropbox/work/cv/source/stylesheets/_layout.scss */
+    #header .external-links li + li {
+      margin-left: 20px; }
 
-/* line 1, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+/* line 47, /Users/opsb/Dropbox/work/cv/source/stylesheets/_layout.scss */
+#main {
+  margin-top: 160px; }
+
+/* line 1, /Users/opsb/Dropbox/work/cv/source/stylesheets/_base.scss */
 body {
   font-family: "proxima-nova";
   font-size: 16px; }
 
-/* line 6, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+/* line 6, /Users/opsb/Dropbox/work/cv/source/stylesheets/_base.scss */
 strong {
   white-space: pre-wrap; }
 
-/* line 10, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+/* line 10, /Users/opsb/Dropbox/work/cv/source/stylesheets/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600; }
 
-/* line 14, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+/* line 14, /Users/opsb/Dropbox/work/cv/source/stylesheets/_base.scss */
 h1 {
   font-size: 3em; }
 
-/* line 18, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+/* line 18, /Users/opsb/Dropbox/work/cv/source/stylesheets/_base.scss */
 h2 {
   font-size: 2.2em;
   margin-bottom: 10px; }
 
-/* line 23, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+/* line 23, /Users/opsb/Dropbox/work/cv/source/stylesheets/_base.scss */
 h4 {
   font-size: 1.2em;
   font-weight: 500; }
 
-/* line 28, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+/* line 28, /Users/opsb/Dropbox/work/cv/source/stylesheets/_base.scss */
 p {
   margin-top: 0;
   line-height: 1.6em; }
 
-/* line 33, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+/* line 33, /Users/opsb/Dropbox/work/cv/source/stylesheets/_base.scss */
 p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 {
   margin-top: 60px; }
 
-/* line 37, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+/* line 37, /Users/opsb/Dropbox/work/cv/source/stylesheets/_base.scss */
 em {
   font-weight: 600; }
 
-/* line 41, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+/* line 41, /Users/opsb/Dropbox/work/cv/source/stylesheets/_base.scss */
 ul {
   margin: 0;
   padding: 0; }
 
-/* line 46, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+/* line 46, /Users/opsb/Dropbox/work/cv/source/stylesheets/_base.scss */
 li {
   list-style: none;
   margin-left: 0;
   margin: 0; }
 
-/* line 52, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+/* line 52, /Users/opsb/Dropbox/work/cv/source/stylesheets/_base.scss */
 a {
   color: #5373F8;
   text-decoration: none; }
 
-/* line 57, /Users/opsb/Dropbox/work/cv/source/stylesheets/base.scss */
+/* line 57, /Users/opsb/Dropbox/work/cv/source/stylesheets/_base.scss */
 a:hover {
   text-decoration: underline; }
 
@@ -472,7 +501,8 @@ a:hover {
   @media all and (max-width: 1020px) {
     /* line 11, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_columns.scss */
     .columns .column {
-      margin-top: 40px; } }
+      margin-top: 40px;
+      width: 100%; } }
 
 /* line 1, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_institution.scss */
 .institution:nth-child(even) {
@@ -555,7 +585,12 @@ a:hover {
     /* line 14, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
     .project .screenshots {
       float: right; } }
-  /* line 19, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
+  @media all and (max-width: 1020px) {
+    /* line 20, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
+    .project .screenshots {
+      float: none;
+      margin: 0 auto; } }
+  /* line 26, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
   .project .keywords {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -564,7 +599,6 @@ a:hover {
     border-radius: 5px;
     zoom: 1;
     /* For IE 6/7 (trigger hasLayout) */
-    width: 880px;
     clear: both;
     font-size: 0.8em;
     background: #EEF1EF;
@@ -577,17 +611,17 @@ a:hover {
     /* line 7, /Users/opsb/Dropbox/work/cv/source/stylesheets/mixins/_group.scss */
     .project .keywords:after {
       clear: both; }
-    /* line 30, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
+    /* line 36, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
     .project .keywords li {
       float: left;
       margin-right: 10px;
       margin-bottom: 5px;
       white-space: wrap;
       color: #333; }
-    /* line 38, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
+    /* line 44, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
     .project .keywords li:after {
       content: ','; }
-    /* line 42, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
+    /* line 48, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
     .project .keywords li.last:after {
       content: ''; }
 
@@ -610,7 +644,7 @@ a:hover {
   margin-top: 7px;
   letter-spacing: 1px; }
 
-/* line 1, /Users/opsb/Dropbox/work/cv/source/stylesheets/state.scss */
+/* line 1, /Users/opsb/Dropbox/work/cv/source/stylesheets/_state.scss */
 .stuck {
   background: green;
   position: fixed;
@@ -618,21 +652,21 @@ a:hover {
   left: 0;
   right: 0; }
 
-/* line 9, /Users/opsb/Dropbox/work/cv/source/stylesheets/state.scss */
+/* line 9, /Users/opsb/Dropbox/work/cv/source/stylesheets/_state.scss */
 .unstuck {
   background: orange; }
 
-/* line 13, /Users/opsb/Dropbox/work/cv/source/stylesheets/state.scss */
+/* line 13, /Users/opsb/Dropbox/work/cv/source/stylesheets/_state.scss */
 .stickem-container, .project {
   position: relative; }
 
-/* line 17, /Users/opsb/Dropbox/work/cv/source/stylesheets/state.scss */
+/* line 17, /Users/opsb/Dropbox/work/cv/source/stylesheets/_state.scss */
 .stickit {
   margin-left: 660px;
   position: fixed;
   top: 0; }
 
-/* line 23, /Users/opsb/Dropbox/work/cv/source/stylesheets/state.scss */
+/* line 23, /Users/opsb/Dropbox/work/cv/source/stylesheets/_state.scss */
 .stickit-end {
   bottom: 40px;
   position: absolute;
