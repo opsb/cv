@@ -1,0 +1,27 @@
+/* line 1, /Users/opsb/Dropbox/work/cv/source/stylesheets/state.scss */
+.stuck {
+  background: green;
+  position: fixed;
+  top: 78px;
+  left: 0;
+  right: 0; }
+
+/* line 9, /Users/opsb/Dropbox/work/cv/source/stylesheets/state.scss */
+.unstuck {
+  background: orange; }
+
+/* line 13, /Users/opsb/Dropbox/work/cv/source/stylesheets/state.scss */
+.stickem-container, .project {
+  position: relative; }
+
+/* line 17, /Users/opsb/Dropbox/work/cv/source/stylesheets/state.scss */
+.stickit {
+  margin-left: 660px;
+  position: fixed;
+  top: 0; }
+
+/* line 23, /Users/opsb/Dropbox/work/cv/source/stylesheets/state.scss */
+.stickit-end {
+  bottom: 40px;
+  position: absolute;
+  right: 0; }
