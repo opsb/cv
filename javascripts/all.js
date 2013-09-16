@@ -535,7 +535,7 @@ $(document).ready(function(){
 		return working;
 	}
 
-	var offset = $('.section').first().offset().top - $("#header").outerHeight() + 4;
+	var offset = 0;//$('.section').first().offset().top - $("#header").outerHeight() + 4;
 
 	$(window).on('scroll touchmove', function(){
 		var scrollTop = $(window).scrollTop();
