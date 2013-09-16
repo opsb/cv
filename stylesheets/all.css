@@ -668,18 +668,18 @@ a:hover {
   right: 0; }
 
 /* line 29, /Users/opsb/Dropbox/work/cv/source/stylesheets/_state.scss */
-[data-sticky='stuck'] .section-header {
+[data-sticky='stuck'] {
   position: fixed;
   top: 79px;
   left: 0;
   right: 0; }
 
 /* line 36, /Users/opsb/Dropbox/work/cv/source/stylesheets/_state.scss */
-[data-sticky='released'] .section-header {
+[data-sticky='released'] {
   position: relative; }
 
 /* line 40, /Users/opsb/Dropbox/work/cv/source/stylesheets/_state.scss */
-[data-sticky='receding'] .section-header {
+[data-sticky='receding'] {
   position: absolute;
   bottom: 0;
   left: 0;

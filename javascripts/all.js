@@ -548,47 +548,51 @@ $(document).ready(function(){
 })
 ;
 $(document).ready(function(){
-	var offset = 79;
+	createStickyHeaders(".section", ".section-header", 79);
+	createStickyHeaders(".project", ".project-header", 220);
 
-	function name(el){
-		return $("h1", el).text();
-	}
+	function createStickyHeaders(containerSelector, headerSelector, offset){
 
-	function stick(el) {
-		el.attr("data-sticky", "stuck");
-		el.placeholder.show();
-	}
+		function name(el){
+			return $("h1", el).text();
+		}
 
-	function release(el) {
-		el.attr("data-sticky", "released");
-		el.placeholder.hide();
-	}
+		function stick(el) {
+			el.attr("data-sticky", "stuck");
+			el.placeholder.show();
+		}
 
-	function recede(el) {
-		el.attr("data-sticky", "receding");
-	}
+		function release(el) {
+			el.attr("data-sticky", "released");
+			el.placeholder.hide();
+		}
 
-	$('.section').each(function(index, element){
-		var container = $(element);
-		var header = $('.section-header', container);
+		function recede(el) {
+			el.attr("data-sticky", "receding");
+		}
 
-		container.waypoint(function(direction){
-			direction == "down" ? stick(container) : release(container);
-		}, { offset: offset } );
+		$(containerSelector).each(function(index, element){
+			var container = $(element);
+			var header = $(headerSelector, container);
 
-		container.waypoint(function(direction){
-			direction == "down" ? recede(container) : stick(container);
-		}, { 
-			offset: function(){
-				return -container.outerHeight() + header.outerHeight() + (offset*1);	
-			}
-		} );	
+			container.waypoint(function(direction){
+				direction == "down" ? stick(header) : release(header);
+			}, { offset: offset } );
 
-		container.placeholder = $("<div></div>").insertBefore(header)
-												.css("display", "none")
-												.height(header.outerHeight());
-		
-	});
+			container.waypoint(function(direction){
+				direction == "down" ? recede(header) : stick(header);
+			}, { 
+				offset: function(){
+					return -container.outerHeight() + header.outerHeight() + (offset*1);	
+				}
+			} );	
+
+			header.placeholder = $("<div></div>").insertBefore(header)
+												 .css("display", "none")
+												 .height(header.outerHeight());
+			
+		});
+	}	
 });
 
 
