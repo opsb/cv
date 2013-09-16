@@ -514,20 +514,19 @@ a:hover {
 
 /* line 9, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_institution.scss */
 .institution {
-  padding: 20px 0 60px;
+  padding: 40px 0 80px;
   border-top: 1px solid #ccc; }
   /* line 13, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_institution.scss */
   .institution h2 {
-    float: left;
     margin: 0;
     margin-right: 20px; }
-  /* line 19, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_institution.scss */
+  /* line 18, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_institution.scss */
   .institution .course {
     float: left;
     margin-right: 20px;
     font-size: 1.4em;
     line-height: 44px; }
-  /* line 26, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_institution.scss */
+  /* line 25, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_institution.scss */
   .institution .grade {
     letter-spacing: 1px;
     float: left;
@@ -565,7 +564,6 @@ a:hover {
 
 /* line 1, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
 .project {
-  border-top: 1px solid #ccc;
   zoom: 1;
   /* For IE 6/7 (trigger hasLayout) */ }
   /* line 3, /Users/opsb/Dropbox/work/cv/source/stylesheets/mixins/_group.scss */
@@ -575,22 +573,22 @@ a:hover {
   /* line 7, /Users/opsb/Dropbox/work/cv/source/stylesheets/mixins/_group.scss */
   .project:after {
     clear: both; }
-  /* line 5, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
+  /* line 4, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
   .project h2 {
     position: sticky; }
-  /* line 9, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
+  /* line 8, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
   .project .position {
     margin-bottom: 20px; }
   @media all and (min-width: 1020px) {
-    /* line 14, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
+    /* line 13, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
     .project .screenshots {
       float: right; } }
   @media all and (max-width: 1020px) {
-    /* line 20, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
+    /* line 19, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
     .project .screenshots {
       float: none;
       margin: 0 auto; } }
-  /* line 26, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
+  /* line 25, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
   .project .keywords {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -611,29 +609,30 @@ a:hover {
     /* line 7, /Users/opsb/Dropbox/work/cv/source/stylesheets/mixins/_group.scss */
     .project .keywords:after {
       clear: both; }
-    /* line 36, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
+    /* line 35, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
     .project .keywords li {
       float: left;
       margin-right: 10px;
       margin-bottom: 5px;
       white-space: wrap;
       color: #333; }
-    /* line 44, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
+    /* line 43, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
     .project .keywords li:after {
       content: ','; }
-    /* line 48, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
+    /* line 47, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_project.scss */
     .project .keywords li.last:after {
       content: ''; }
 
 /* line 1, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_section.scss */
 .section {
-  padding: 20px 0 60px; }
+  padding: 20px 0 60px;
+  border-top: 1px solid #ccc; }
 
-/* line 5, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_section.scss */
+/* line 6, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_section.scss */
 .section:nth-child(odd) {
   background-color: #fafaf4; }
 
-/* line 9, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_section.scss */
+/* line 10, /Users/opsb/Dropbox/work/cv/source/stylesheets/modules/_section.scss */
 .section:nth-child(even) {
   background-color: #fff; }
 
