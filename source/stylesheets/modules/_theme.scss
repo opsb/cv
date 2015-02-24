@@ -1,0 +1,44 @@
+.year {
+	float: right;
+}
+
+h2, .year {
+	font-size: 3.5mm;
+	text-transform: uppercase;
+	color: $green;
+	font-weight: 600;
+	margin-bottom:3px;
+}
+
+p {
+	font-size: 0.8em;
+}
+
+.position {
+	font-size: 0.7em;
+	font-weight: 600;
+	color: #ababab;
+}
+
+#other {
+	h2 {
+		color: #333;
+	}
+}
+
+.keywords {
+	font-size: 0.7em;
+	font-weight: 100;
+	li {
+		float:left;		
+	}
+}
+
+.section {
+	overflow: hidden;
+}
+
+a {
+	font-size: 0.7em;
+	color:black;
+}

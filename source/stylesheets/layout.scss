@@ -1,15 +1,59 @@
+html, body {
+	background: #C5C5C5;
+}
+
+.page { 
+	height:297mm; 
+	width:210mm; 
+	margin-left:auto; 
+	margin-right:auto; 
+	overflow: hidden;
+	background-color: white;
+}
+
 .constrained {
-	max-width:900px;
-	margin:0 auto;
-	padding-left:100px;
-	padding-right:20px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 #header {
-	background:#489DA8;
-	padding:20px 0;
+	background: #7CBD4B;
+	overflow: hidden;
+	color: white;
 	h1 {
-		font-size: 3.6em;
-		color:white;
+		padding: 0px 0;
+	}
+}
+
+.section {
+	margin-top: 2.5mm;
+	margin-bottom: 2.5mm;
+}
+
+#employment {
+	float:left;
+	width:68%;
+}
+
+#other {
+	float:right;
+	width:32%;
+	background: #efefef;
+	height: 100%;
+	padding:2.5mm;
+	padding-left:5mm;
+	padding-right:5mm;
+	box-sizing: border-box;
+
+	h3 {
+		margin: 15px 0 0;
+	}
+
+	p {
+		margin: 2px 0;
+	}
+
+	.education {
+		margin-bottom:25px;
 	}
 }

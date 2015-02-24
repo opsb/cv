@@ -1,5 +1,5 @@
 body {
-	font-family:"proxima-nova";
+	font-family:"helvetica neue";
 	font-size: 16px;
 }
 
@@ -8,7 +8,7 @@ strong {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 600;
+	font-weight: 400;
 }
 
 h1 {
@@ -18,6 +18,10 @@ h1 {
 h2 {
 	font-size: 2.2em;
 	margin-bottom:10px;
+}
+
+h3 {
+	font-size: 4mm;
 }
 
 h4 {
@@ -52,6 +56,12 @@ li {
 a {
 	color:#5373F8;
 	text-decoration: none;
+}
+
+p {
+	font-weight: 200;
+	margin: 7px 0;
+	line-height: 1.5em;
 }
 
 a:hover {

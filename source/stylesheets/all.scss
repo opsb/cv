@@ -3,15 +3,10 @@
 @import "compass/css3/border-radius";
 
 @import 'vendor/_normalize';
+@import '_colours';
 @import 'layout';
 @import 'base';
+@import 'modules/_theme';
 
 @import 'mixins/group';
 
-@import 'modules/project';
-@import 'modules/education';
-@import 'modules/year';
-@import 'modules/section';
-@import 'modules/header-block';
-@import 'modules/nobreak';
-@import 'modules/badge';
